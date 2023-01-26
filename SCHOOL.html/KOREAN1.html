@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+    
+</head>
+<style>
+     @import url('https://fonts.googleapis.com/css?family=Montserrat');
+html{
+  overflow-x: hidden;
+}
+
+.title {
+	
+	font-family: "Montserrat";
+	text-align: center;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	letter-spacing: 1px;
+}
+
+h1 {
+
+	background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
+	background-size: cover;
+	color: transparent;
+	-moz-background-clip: text;
+	-webkit-background-clip: text;
+	text-transform: uppercase;
+	font-size: 120px;
+	line-height: .75;
+	margin: 10px 0;
+}
+   
+   body, html {
+  height: 100%;
+  
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+  /* The image used */
+  background-image: url("image/cover.jpg");
+  
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  
+  /* Full height */
+  height: 110%; 
+  
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Position text in the middle of the page/image */
+.text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  
+  align-items: center;
+  justify-content: center;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 50%;
+  padding: 20px;
+  text-align: center;
+}
+.kr{
+  color:white;
+  font-weight:bold;
+  position:absolute;
+  top:70%;
+  left:47%;
+  z-index:2;
+  text-align:center;
+}
+
+
+/* Setting fade transition and default settings */
+body {
+  display : block;
+  color: #f4f4f4;
+  background-color: #000;
+  transition: background-color 1s ease;
+ 
+  margin:0px;
+  padding:0px;
+ 
+}
+
+/* panel styles */
+.panel {
+  /* min height incase content is higher than window height */
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.panelrf {
+  /* min height incase content is higher than window height */
+  min-height: 100vh;
+  display: relative;
+  justify-content: space-around;
+  align-items: center;
+  text-align:left;
+}
+
+
+/* colours */
+.color-black{
+    background-color:#000;
+    color:white;
+}
+.color-white {
+  background-color: #f7f7f7;
+}
+
+/* -----------------------------box------------------------------------------ */
+
+*:before,
+*:after {
+  
+  box-sizing: border-box;
+
+}
+
+.aos-all {
+  
+  width: 1000px;
+  max-width: 98%;
+  
+  margin-top: 80px;
+  padding-left: -50px;
+  padding-right: -50px;
+ 
+}
+
+.aos-item {
+  display: inline-block;
+  float: left;
+  width: 46%;
+  height: 430px;
+  padding :30px;
+  
+}
+.aos-item1{
+  display: inline-block;
+  float: left;
+  width: 46%;
+  height: 430px;
+  margin-left:-200px;
+  
+  padding :30px;
+  
+}
+.aos-item3{
+  display: inline-block;
+  float: left;
+  width: 46%;
+  height: 430px;
+  margin-right:-200px;
+  padding :30px;
+  
+}
+.aos-itemMEDI{
+  display: inline-block;
+  float: left;
+  width: 93%;
+  height: 500px;
+  margin-left:-200px;
+  margin-right:-30px;
+  padding :30px;
+  padding-right:100px;
+}
+.aos-itemMEDIS{
+  display: inline-block;
+  float: left;
+  width: 520px;
+  height: 500px;
+  margin-left:-43px;
+  padding :30px;
+  margin-right:-200px;
+}
+.aos-itemRn{
+  display: inline-block;
+  float: left;
+  width: 138%;
+  height: 650px;
+  margin-left:-200px;
+  margin-right:0px;
+  padding :30px;
+  
+}
+.aos-item__inner {
+  
+  border : 3px solid black;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  float: left;
+  background: #000;
+  
+  text-align: center;
+  color: #FFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.aos-item__innerRN {
+  
+  
+  background: #000;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  float: left;
+  background-image: url("image/Renaissance.jpg");
+  background-size:cover;
+  
+  text-align: center;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.aos-item__innerTH {
+  background: #000;
+
+  position: relative;
+  width: 100%;
+  height: 100%;
+  float: left;
+  background-image: url("image/thales.jpg");
+  background-size:cover;
+  
+  text-align: center;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.aos-item__innerPT {
+  background: #000;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  float: left;
+  background-image: url("image/Pythagoras.jpg");
+  background-size:cover;
+  
+  text-align: center;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.aos-item__innerHR {
+  background: #000;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  float: left;
+  background-image: url("image/Heraclitus.jpeg");
+  background-size:cover;
+  
+  text-align: center;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.aos-item__innerSP {
+  background: #000;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  float: left;
+  background-image: url("image/Protagoras.jpeg");
+  background-size:cover;
+  
+  text-align: center;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.aos-item__innerSCT {
+  background: #000;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  float: left;
+  background-image: url("image/socrates.jpeg");
+  background-size:cover;
+  
+  text-align: center;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.aos-item__innerPL {
+  background: #000;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  float: left;
+  background-image: url("image/PLATON.jpg");
+  background-size:cover;
+  
+  text-align: center;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.aos-item__innerMD {
+  background: #000;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  float: left;
+  background-image: url("image/med.jpg");
+  background-size:cover;
+  
+  text-align: center;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.aos-item__innerARI {
+  background: #000;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  float: left;
+  background-image: url("image/Aristot.png");
+  background-size:cover;
+  
+  text-align: center;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.aos-item__innervoid1 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url("image/acro.jpg");
+  background-size : cover;
+  }
+  .aos-item__innerSK {
+  background: #000;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  float: left;
+  background-image: url("image/Pyrrhon.jpg");
+  background-size:cover;
+  
+  text-align: center;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.aos-item__innerEP {
+  background: #000;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  float: left;
+  background-image: url("image/epicu.jpeg");
+  background-size:cover;
+  
+  text-align: center;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.aos-item__innerStoa {
+  background: #000;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  float: left;
+  background-image: url("image/ZEN.jpg");
+  background-size:cover;
+  
+  text-align: center;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.aos-item__innerAugust {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url("image/Saint_Augustine.jpg");
+  background-size:cover;
+  
+  text-align: center;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.aos-item__innertomas {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url("image/tomas.jpg");
+  background-size:cover;
+  
+  text-align: center;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+    
+    
+
+
+@media screen and (max-width: 800px) {
+  .aos-item {
+    width: 50%;
+  }
+}
+/* -----------------------------box------------------------------------------ */
+</style>
+
+<body>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script> 
+  <script> AOS.init(); </script>
+  
+<div class="bg-image"></div>
+
+<div class="text">
+  <h3>WELCOME TO</h3>
+  <h2 style="font-size:50px">The History Of Western Philosophy</h2>
+</div>
+
+<div class="kor">
+<div class="kr">
+  <h3>KOREAN</h3>
+  </div>
+</div>
+
+<div class="panel" data-color="black">
+<div data-aos="fade-up" data-aos-duration="1500">
+   <div class="example"><br><br><h2>Philosophy</h2> <br>
+    <p>그리스어로 'philo'는 사랑한다는 의미이고 'sophia'는 지혜를 뜻합니다.</p>
+    <p>필로소피아(philosophia). 지혜를 사랑하는 것. 끊임없는 앎을 추구하는 과정이 지금의 철학이 된 것입니다.</p>
+    <br>
+  </div> 
+</div>
+</div>
+<div class="panel" data-color="black">
+<div data-aos="fade-up" data-aos-duration="1500">
+  <div class="example"> 
+    <h2 style="text-align: center;">CAUTION</h2>
+    <p>이페이지는 철학사의 모든 내용을 다루지 않습니다.</p>
+    </div>
+</div>
+</div>
+
+<div class="panel" data-color="black">
+  <div data-aos="zoom-in-up" data-aos-duration="1500">
+  <div class="title">
+    <h1>INTO<br><br>THE PHILOSOPHY</h1>
+   </div>
+  </div>
+</div>
+
+    
+
+<div class="panel" data-color="white">
+  <div class="aos-all">
+    <div class="aos-item1" data-aos="fade-up" data-aos-duration="1500">
+      <div class="aos-item__innerTH"><h3>밀레토스 학파​(Milesians)</h3></div>
+    </div>
+    <div class="aos-item" data-aos="fade-down"data-aos-duration="1500">
+      <div class="aos-item__innerPT"><h3>피타고라스 학파</h3></div>
+    </div>
+    <div class="aos-item3" data-aos="fade-up"data-aos-duration="1500">
+      <div class="aos-item__innerHR"><h3>에페소스 학파</h3></div>
+    </div>
+    <div class="aos-item" data-aos="flip-down" data-aos-duration="1500">
+      <div class="aos-item__innerPL"><h3>소피스트</h3></div>
+    </div>
+    <div class="aos-item" data-aos="flip-up"data-aos-duration="1500">
+      <div class="aos-item__innerSCT"><h3>소크라테스(Sokrates)
+        470 - 399 BC</h3></div>
+    </div>
+    <div class="aos-item1" data-aos="flip-down"data-aos-duration="1500">
+      <div class="aos-item__innerSP"><h3>플라톤(Platon)
+        427 - 347 BC</h3></div>
+    </div>
+    <div class="aos-item" data-aos="fade-in">
+      <div class="aos-item__innerARI"><h3>아리스토텔레스(Aristoteles)
+        384 - 333 BC</h3></div>
+    </div>
+    <div class="aos-item3" data-aos="fade-down">
+      <div class="aos-item__innerSK"><h3>회의주의자 피론</h3></div>
+    </div>
+    
+    <div class="aos-item" data-aos="fade-down">
+      <div class="aos-item__innerEP"><h3>에피쿠로스 학파</h3></div>
+    </div>
+    <div class="aos-item" data-aos="fade-up">
+      <div class="aos-item__innerStoa"><h3>스토아 학파</h3></div>
+    </div>
+    
+    <div class="aos-item" data-aos="fade-in">
+      <div class="aos-item__innerAugust"><h3>아우구스티누스(Augustinus)
+        354 - 430</h3></div>
+    </div>
+    <div class="aos-item" data-aos="fade-in">
+      <div class="aos-item__innervoid1"></div>
+    </div>
+    <div class="aos-itemMEDI" data-aos="fade-up">
+      <div class="aos-item__innerMD"><h3>중세(Medieval Europe)</h3></div>
+    </div>
+    <div class="aos-itemMEDIS" data-aos="fade-in">
+      <div class="aos-item__innertomas"><h3>스콜라철학의 대표 토마스 아퀴나스(Thomas Aquinas)
+        1225 ­- 1274 BC</h3></div>
+    </div>
+    <div class="aos-itemRn" data-aos="fade-up">
+      <div class="aos-item__innerRN"><h3>르네상스</h3></div>
+    </div>
+    <div class="aos-item1" data-aos="fade-down">
+      <div class="aos-item__inner"><h3>니콜로 마키아벨리(Niccolo Machiavelli)
+        1469 -­ 1527</h3></div>
+    </div>
+    <div class="aos-item" data-aos="fade-up">
+      <div class="aos-item__inner"><h3>토머스 모어Thomas More
+        1478 ­ 1535</h3></div>
+    </div>
+    <div class="aos-item3" data-aos="zoom-out">
+      <div class="aos-item__inner"><h3>몽테뉴(Micheal de Montaigne)
+        1533 ­- 1592</h3></div>
+    </div>
+    <div class="aos-item1" data-aos="fade-up">
+      <div class="aos-item__inner"><h3>만인의 만인에 대한 투쟁 : 토머스 홉스(Thomas Hobbes)
+        1588 -­ 1679+파스칼 까지 르네상스 르네상스 페이지 만들어서 넣기</h3></div>
+    </div>
+    <div class="aos-item" data-aos="zoom-out">
+      <div class="aos-item__inner"><h3>대륙 이성론 : 나는 생각한다 고로 존재한다. 르네 데카르트(Rene Descartes)
+        1596 -­ 1650</h3></div>
+    </div>
+    <div class="aos-item3" data-aos="fade-in">
+      <div class="aos-item__inner"><h3>대륙이성론 :스피노자(Baruch de Spinoza)
+        1632 -­ 1677</h3></div>
+    </div>
+    <div class="aos-item1" data-aos="zoom-out-up">
+      <div class="aos-item__inner"><h3>영국 경험론 
+        로크 John Locke 1632-1704
+        버클리 George Berkeley 1685 ­ 1753
+        흉 David Hume 1711-­ 1776</h3></div>
+    </div>
+    <div class="aos-item" data-aos="zoom-out-down">
+      <div class="aos-item__inner"><h3>임마누엘 칸트Immanuel Kant
+        1724 ­ 1778</h3></div>
+    </div>
+    <div class="aos-item3" data-aos="fade-in">
+      <div class="aos-item__inner"><h3>공리주의<h3></h3>
+        제레미 벤담Jeremy Bentham
+        1748 ­ 1832</h3><br>존 스튜어트 밀John Stuart Mill
+        1806 ­ 1873</div>
+    </div>
+    <div class="aos-item1" data-aos="fade-in">
+      <div class="aos-item__inner"><h3>독일 관념론<br>
+        해겔Georg Wilhelm Friedrich Hegel
+        1770 ­ 1831
+        쇼펜하우어Arthur Schopenhauer
+        1788 ­ 1860</h3></div>
+    </div>
+    <div class="aos-item" data-aos="fade-in">
+      <div class="aos-item__inner"><h3>카를 하인리히 마르크스Karl Heinrich Marx
+        1818 ­ 1883<br>
+        프리드리히 니체Friedrich Nietzsche
+        1844 ­ 1900</h3></div>
+    </div>
+    <div class="aos-item3" data-aos="fade-in">
+      <div class="aos-item__inner"><h3>현상학<br>
+        마르틴 하이데거Martin Heidegger
+        1889 ­ 197</h3></div>
+    </div>
+    <div class="aos-item1" data-aos="fade-in">
+      <div class="aos-item__inner"><h3>분석철학<br>
+        버트런드 러셀Bertrand Russell
+        1872 ­ 1970<br>
+        무어George Edward Moore
+        1873 ­ 1958</h3></div>
+    </div>
+    <div class="aos-item" data-aos="fade-in">
+      <div class="aos-item__inner"><h3>실존주의</h3></div>
+    </div>
+    <div class="aos-item3" data-aos="fade-in">
+      <div class="aos-item__inner"><h3>롤스 1921-2002</h3></div>
+    </div>
+    <div class="aos-item1" data-aos="fade-in">
+      <div class="aos-item__inner"><h3>아마르티아 센 1933~</h3></div>
+    </div>
+    <div class="aos-item" data-aos="fade-in">
+      <div class="aos-item__inner"><h3>노직 1938-2002</h3></div>
+    </div>
+    <div class="aos-item3" data-aos="fade-in">
+      <div class="aos-item__inner"><h3>샌델 1953~</h3></div>
+    </div>
+  
+  </div></div>
+  <div class="panelLAST" data-color="BLACK">
+  </div>
+
+
+    <div class="panel" data-color="black">
+      <div data-aos="fade-up" data-aos-duration="1500">
+         <div class="example"><h2>Reference book list </h2><br>
+          <p>  The story of philosophy by Will Durant</p>
+          <p>Socrates to Sartre: A History of Philosophy by Samuel Enoch Stumpf</p>
+          <p> 곁에 두고 읽는 서양철학사 by 오가와 히토시</p></div> 
+      </div>
+      </div>
+<!-- ---------------------------------------------------------------------------------------------------->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+<script type="text/javascript">
+$(window).scroll(function() {
+
+// selectors
+var $window = $(window),
+    $body = $('body'),
+    $panel = $('.panel');
+
+// Change 33% earlier than scroll position so colour is there when you arrive.
+var scroll = $window.scrollTop() + ($window.height() / 3);
+
+$panel.each(function () {
+  var $this = $(this);
+  
+  // if position is within range of this panel.
+  // So position of (position of top of div <= scroll position) && (position of bottom of div > scroll position).
+  // Remember we set the scroll to 33% earlier in scroll var.
+  if ($this.position().top <= scroll && $this.position().top + $this.height() > scroll) {
+        
+    // Remove all classes on body with color-
+    $body.removeClass(function (index, css) {
+      return (css.match (/(^|\s)color-\S+/g) || []).join(' ');
+    });
+     
+    // Add class of currently active div
+    $body.addClass('color-' + $(this).data('color'));
+  }
+});    
+
+}).scroll();
+</script> 
+<!------------------------------------------------------------------------------------------------------------>
+
+</body>
+</html>
